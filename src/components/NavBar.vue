@@ -13,7 +13,7 @@
         <v-navigation-drawer v-model="cerrarNavBar"
             absolute
             temporary
-            color="rgb(0, 29, 153,0.41)">
+            color="#546E7A">
             <v-container>
             <v-btn icon
                 absolute
@@ -31,13 +31,9 @@
                 <v-container column>
                     <v-row>
                         <v-btn text
-                        color="white">
-                            Inicio
-                        </v-btn>
-                    </v-row>
-                    <v-row>
-                        <v-btn text
+                        class="mt-10"
                         color="white"
+                        @click="cerrarNavBar = false"
                         :to="{ name: 'listasTareas' }">
                         Listas de Tareas
                         </v-btn>
